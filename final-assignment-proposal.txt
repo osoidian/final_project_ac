@@ -1,0 +1,6 @@
+My idea for my final assignment is for to make a small business site for a barber shop.
+The site will have two pages.
+One page will have all the business' info such as pictures, services, prices. This will show of the majority of the content and styling.
+The second page will be a check-in system, where customers will be able to book their place in line so they can avoid long queue times
+and arrive to the shop and basically walk in through the door and into a chair.
+This page will be displayed in-store where it can be seen by everyone, displaying the customer name, position in line, barber of choice and approximate wait time.
