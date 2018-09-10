@@ -7,14 +7,26 @@ body {
   margin: 0;
 }
 
+#hero, #about, #services, #gallery, #contact{
+  height: 100vh;
+  width: 100%;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+}
+
 #hero {
   background-image:url(../images/hero.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  color: white;  
 }
 
-#about, #services, #gallery, #contact{
-  height: 100vh;
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
