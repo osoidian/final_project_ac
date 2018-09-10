@@ -7,9 +7,19 @@ body {
   margin: 0;
 }
 
-#hero, #about, #services, #gallery, #contact{
-  height: 100vh;
-  width: 100%;
+a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px rgb(56, 53, 53);
+
+}
+
+#about, #services, #gallery, #contact {
+  height: 50vh;
+}
+
+#about h2, #services h2, #gallery h2, #contact h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 #page-container {
@@ -22,11 +32,29 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;  
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
 }
 
-.navigation {
+#hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  text-shadow: 5px 5px 5px rgb(56, 53, 53);
+}
+
+.navigation ul {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  padding: 0 5px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
