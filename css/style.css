@@ -1,28 +1,20 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Josefin Sans', sans-serif; */
 
-body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
+* {
   margin: 0;
+  padding: 0;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  text-shadow: 2px 2px rgb(56, 53, 53);
-
+#logo, h2, h3, h4 {
+  text-transform: capitalize;
 }
 
-#about, #services, #gallery, #contact {
-  height: 50vh;
+#logo, #navigation a {
+  text-shadow: 2px 2px 2px #929292;
 }
 
-#about h2, #services h2, #gallery h2, #contact h2 {
-  font-family: 'Playfair Display', serif;
-}
-
-#page-container {
+#main-container {
   display: flex;
   flex-direction: column;
 }
@@ -33,28 +25,34 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  height: 50vh;
   display: flex;
   justify-content: space-around;
-  height: 100vh;
 }
 
-#hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  text-shadow: 5px 5px 5px rgb(56, 53, 53);
-}
-
-.navigation ul {
+#navigation {
   display: flex;
-}
-
-.navigation ul li {
+  justify-content: flex-end;
   list-style-type: none;
-  padding: 0 5px;
+  text-transform: uppercase;
 }
 
-.main-content {
+#navigation li {
+  margin-right: 10px;
+}
+
+#navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+#main-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container {
+  flex-basis: 1;
 }
