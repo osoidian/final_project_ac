@@ -1,58 +1,60 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Josefin Sans', sans-serif; */
 
-* {
+body {
   margin: 0;
-  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
 }
 
-#logo, h2, h3, h4 {
-  text-transform: capitalize;
+a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px rgb(56, 53, 53);
+
 }
 
-#logo, #navigation a {
-  text-shadow: 2px 2px 2px #929292;
+#about, #services, #gallery, #contact {
+  height: 50vh;
 }
 
-#main-container {
+#about h2, #services h2, #gallery h2, #contact h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+#page-container {
   display: flex;
   flex-direction: column;
 }
 
 #hero {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
   background-image:url(../images/hero.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 50vh;
-  display: flex;
-  justify-content: space-around;
 }
 
-#navigation {
+#hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  text-shadow: 5px 5px 5px rgb(56, 53, 53);
+}
+
+.navigation ul {
   display: flex;
-  justify-content: flex-end;
+}
+
+.navigation ul li {
+  padding: 0 5px;
   list-style-type: none;
-  text-transform: uppercase;
 }
 
-#navigation li {
-  margin-right: 10px;
-}
-
-#navigation a {
-  color: white;
-  text-decoration: none;
-}
-
-#main-content {
+.main-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-container {
-  flex-basis: 1;
+  justify-content: space-around;
 }
