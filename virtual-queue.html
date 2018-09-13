@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Strop & Blade's Virtual Queue</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="js/main.js"></script>
 </head>
 <body>
-  <input type="text" id="customer-name">
-  <input type="button" value="Enter Queue">
+  <form>
+    <input type="text" id="customer-name">
+    <button id='reserve'>Reserve spot</button>
+  </form>
+
+  <h2>Currently serving:</h2>
+  <ul id='customers-waiting'></ul>
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
