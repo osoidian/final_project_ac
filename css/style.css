@@ -3,6 +3,7 @@ font-family: 'Josefin Sans', sans-serif; */
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
 }
@@ -14,47 +15,92 @@ a {
 
 }
 
-#about, #services, #gallery, #contact {
-  height: 50vh;
+.about, .services, .gallery, .contact {
+  /* height: 50vh; */
+  border: 1px solid red;
+  width: 50%;
+  display: flex;
 }
 
-#about h2, #services h2, #gallery h2, #contact h2 {
+.about h2, .services h2, .gallery h2, .contact h2 {
   font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
 }
 
-#page-container {
+#main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   height: 100vh;
   background-image:url(../images/hero.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  align-items: center;
 }
 
-#hero h1 {
+#logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
+  font-size: 5rem;
   text-shadow: 5px 5px 5px rgb(56, 53, 53);
 }
 
-.navigation ul {
-  display: flex;
+#navigation {
+  background-color: lightgrey;
+  margin: 0;
+  height: 50px;
 }
 
-.navigation ul li {
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+nav ul li {
   padding: 0 5px;
   list-style-type: none;
 }
 
-.main-content {
+#main-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 400px;
+  padding: 0.5em;
 }

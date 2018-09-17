@@ -17,17 +17,17 @@
 
     <header id='hero'>
       <h1 id='logo'>the strop & blade</h1>
-      <nav>
-        <ul id='navigation'>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href="#gallery">gallery</a></li>
-          <li><a href="#contact">contact</a></li>
-          <li><a href="virtual-queue.html">virtual-queue</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav id='navigation'>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="virtual-queue.html">virtual-queue</a></li>
+      </ul>
+    </nav>
 
     <main id='main-content'>
       <section class='section-container about'>
@@ -41,34 +41,38 @@
       <section class='section-container services'>
         <h2>our services</h2>
         <p>Just a cut? Beard trim? Whatever your needs, jump into one of our chairs and we'll take care of the rest</p>
-        <div class='service-card'>
-          <h3>traditional cuts</h3>
-          <img src="" alt="#">
-          <p>From a fade to a trim, we cut them all</p>
-        </div>
-        <div class='service-card'>
-          <h3>shaves</h3>
-          <img src="" alt="#">
-          <p>Using a traditional cutthroat, we'll leave your face silky smooth</p>
-        </div>
-        <div class='service-card'>
-          <h3>beard maintenance</h3>
-          <img src="" alt="#">
-          <p>Just a trim or a complete re-style? Relax, we'll take care of your pride and joy.</p>
+        <div class="service-card-container">
+          <div class='service-card'>
+            <h3>traditional cuts</h3>
+            <img src="images/scissor-comb.png" alt="Icon of a scissor and comb">
+            <p>From a fade to a trim, we cut them all</p>
+          </div>
+          <div class='service-card'>
+            <h3>shaves</h3>
+            <img src="images/razor.png" alt="Icon of a straight razor">
+            <p>Using a traditional cutthroat, we'll leave your face silky smooth</p>
+          </div>
+          <div class='service-card'>
+            <h3>beard maintenance</h3>
+            <img src="images/beard.png" alt="Icon of a beard">
+            <p>Just a trim or a complete re-style? Relax, we'll take care of your pride and joy.</p>
+          </div>
         </div>
       </section>
 
       <section class='section-container gallery'>
         <h2>our work</h2>
-        <img src="" alt="#">
-        <img src="" alt="#">
-        <img src="" alt="#">
-        <img src="" alt="#">
-        <img src="" alt="#">
-        <img src="" alt="#">
+        <div class="gallery-container">
+          <img src="images/gallery-image01.jpg" alt="#">
+          <img src="images/gallery-image02.jpg" alt="#">
+          <img src="images/gallery-image03.jpg" alt="#">
+          <img src="images/gallery-image04.jpg" alt="#">
+          <img src="images/gallery-image05.jpg" alt="#">
+          <img src="images/gallery-image06.jpg" alt="#">
+        </div>
       </section>
 
-      <section class='section-container form'>
+      <section class='section-container contact'>
         <h2>contact us</h2>
         <p>Comments, questions? Drop us a line here.</p>
         <form action="#" method="POST">
@@ -76,12 +80,12 @@
             <label for="name">Name</label>
             <input id='name' type="text">
           </div>
-  
+
           <div>
             <label for="email">Email</label>
             <input id='email' type="text">
           </div>
-  
+
           <div>
             <label for="message">Your message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
@@ -96,7 +100,7 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-facebook-square"></i></a>
         <a href="#"><i class="fab fa-twitter-square"></i></a>
-      </div> 
+      </div>
     </footer>
 
   </section>
