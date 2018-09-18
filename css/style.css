@@ -1,6 +1,7 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Josefin Sans', sans-serif; */
 
+/* Main Page Styles */
 body {
   margin: 0;
   padding: 0;
@@ -16,8 +17,7 @@ a {
 }
 
 .about, .services, .gallery, .contact {
-  /* height: 50vh; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
   display: flex;
 }
@@ -101,6 +101,39 @@ nav ul li {
 }
 
 .gallery img {
-  width: 400px;
+  width: 350px;
+  height: 200px;
   padding: 0.5em;
+  filter: grayscale(1);
+}
+
+.gallery img:hover {
+  filter: grayscale(0);
+}
+
+/* Virtual Queue Style */
+
+#queue-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image:url(../images/virtual-queue-bg01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#queue-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px rgb(56, 53, 53);
+}
+
+#customer-name {
+  border-radius: 15px;
+  font-size: 2rem;
 }

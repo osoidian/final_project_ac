@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Strop & Blade's Virtual Queue</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display:900" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
-  <div class="hero-queue">
+  <div id="queue-container">
     <form>
       <input type="text" id="customer-name">
       <button id='reserve'>Reserve spot</button>
     </form>
+    <h2>Currently serving:</h2>
+    <ol id='customers-waiting'>
+      <!-- <li>Dummy client</li> -->
+    </ol>
   </div>
-  <h2>Currently serving:</h2>
-  <ol id='customers-waiting'></ol>
 
 </body>
 </html>
