@@ -17,7 +17,6 @@ a {
 }
 
 .about, .services, .gallery, .contact {
-  /* border: 1px solid red; */
   width: 50%;
   display: flex;
 }
@@ -105,10 +104,27 @@ nav ul li {
   height: 200px;
   padding: 0.5em;
   filter: grayscale(1);
+  transition: filter 500ms linear;
 }
 
 .gallery img:hover {
   filter: grayscale(0);
+  transition: filter 500ms linear;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+  justify-content: center;
+  height: 10%;
+}
+
+footer i {
+  font-size: 2rem;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 /* Virtual Queue Style */
@@ -131,6 +147,33 @@ nav ul li {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
   text-shadow: 5px 5px 5px rgb(56, 53, 53);
+  background-color: rgba(134, 116, 116, 0.7);
+  border-radius: 20px;
+  padding: .2em;
+  box-shadow: 5px 5px 10px rgb(56, 53, 53);
+}
+
+#queue-container form div {
+  display: flex;
+}
+
+#queue-container ol {
+  font-size: 1.75rem;
+  text-shadow: 5px 5px 5px rgb(56, 53, 53);
+}
+
+#queue-container ol li {
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid silver;
+}
+
+span {
+  margin-right: 50px
+}
+
+.timer {
+  margin-right: 0;
 }
 
 #customer-name {
@@ -139,6 +182,7 @@ nav ul li {
   font-size: 2rem;
   padding: 0.25em;
   box-shadow: 5px 5px 10px rgb(56, 53, 53);
+  margin-right: 10px;
 }
 
 #reserve {
@@ -147,6 +191,7 @@ nav ul li {
   font-family: 'Josefin Sans', sans-serif;
   padding: 0.5em;
   border-radius: 15px;
-  background-color: #D3D5C7;
-  box-shadow: 5px 5px 10px rgb(56, 53, 53);
+  background-color: rgb(214, 207, 196);
+  box-shadow: 5px 5px 10px rgb(56, 53, 53),
+              inset 0px 1px #e4e7d7;
 }

@@ -9,34 +9,43 @@
         name: $('#customer-name').val(),
         count: 10
       }
-      customers.push(newCustomer)
-      var date = new Date()
-      var $customer = $("<li data-customer-id='" + newCustomer.id + "'>")
-      var $timeAdded = $('<span>').text(date.getHours() + ':' + date.getMinutes())
-      var $customerTimer = $('<p>').text(newCustomer.count)
-      $customer.append(newCustomer.name + ' ')
-      $customer.append($timeAdded)
-      $customer.append($customerTimer)
-      $('#customers-waiting').append($customer)
-      $('#customer-name').val('')
-  
+      if ($('#customer-name').val() != '') {
+        customers.push(newCustomer)
+        var date = new Date()
+        var $customer = $("<li data-customer-id='" + newCustomer.id + "'>")
+        var $timeAdded = $('<span>').text(date.toLocaleTimeString())
+        var $customerTimer = $('<span class="timer">').text(newCustomer.count)
+        $customer.append(newCustomer.name + ' ')
+        $customer.append($timeAdded)
+        $customer.append($customerTimer)
+        $('#customers-waiting').append($customer)
+        $('#customer-name').val('')
+      } else {
+        alert('Please enter your name to be placed in the queue.')
+      }
+
       var intervalId = setInterval(function(){
-        $('li[data-customer-id="' + newCustomer.id + '"] p').text(newCustomer.count -= 1)
+        $('li[data-customer-id="' + newCustomer.id + '"] span[class="timer"]').text(newCustomer.count -= 1)
         if (newCustomer.count <= 0) {
           clearInterval(intervalId)
+          $('h2').text('Currently serving:' + ' ' + newCustomer.name )
+          $('li[data-customer-id="' + newCustomer.id + '"]').remove()
         }
       }, 1000)
       customerId++
     })
   })
-  
+
+
+/*getHours() + ':' + date.getMinutes - from line 15. Found a better option*/
+
   // var count = 30
-  
+
 
   // // Working code
   // $('#reserve').click(function(){
   //   event.preventDefault()
-    
+
   //   var newCustomer = $('#customer-name').val()
   //   customers.push(newCustomer)
   //   $('#customers-waiting').append('<li>' + newCustomer + ' ' + '<span>' + count + '</span>' + '</li>')
