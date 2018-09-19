@@ -134,6 +134,19 @@ nav ul li {
 }
 
 #customer-name {
-  border-radius: 15px;
+  border: none;
+  border-radius: 20px;
   font-size: 2rem;
+  padding: 0.25em;
+  box-shadow: 5px 5px 10px rgb(56, 53, 53);
+}
+
+#reserve {
+  border: none;
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0.5em;
+  border-radius: 15px;
+  background-color: #D3D5C7;
+  box-shadow: 5px 5px 10px rgb(56, 53, 53);
 }
