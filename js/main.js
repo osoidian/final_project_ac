@@ -7,7 +7,7 @@
       var newCustomer = {
         id: customerId,
         name: $('#customer-name').val(),
-        count: 10
+        count: 59
       }
       customers.push(newCustomer)
       var date = new Date()
